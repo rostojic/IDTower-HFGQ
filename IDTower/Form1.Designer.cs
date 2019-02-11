@@ -37,11 +37,8 @@
             this.txtResultPAID = new System.Windows.Forms.TextBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.txtPAIDpart3 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.txtPAIDpart2 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.txtPAIDpart1 = new System.Windows.Forms.TextBox();
             this.txtPrefix = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txt310K = new System.Windows.Forms.TextBox();
@@ -57,6 +54,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
+            this.txtPAIDpart3 = new System.Windows.Forms.TextBox();
+            this.txtPAIDpart2 = new System.Windows.Forms.TextBox();
+            this.txtPAIDpart1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.numTotal)).BeginInit();
             this.SuspendLayout();
             // 
@@ -163,17 +163,6 @@
             this.label11.TabIndex = 37;
             this.label11.Text = "PAID part 3";
             // 
-            // txtPAIDpart3
-            // 
-            this.txtPAIDpart3.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPAIDpart3.Location = new System.Drawing.Point(31, 253);
-            this.txtPAIDpart3.Margin = new System.Windows.Forms.Padding(4);
-            this.txtPAIDpart3.Name = "txtPAIDpart3";
-            this.txtPAIDpart3.ReadOnly = true;
-            this.txtPAIDpart3.Size = new System.Drawing.Size(409, 22);
-            this.txtPAIDpart3.TabIndex = 36;
-            this.txtPAIDpart3.Text = "370000004      ";
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -183,17 +172,6 @@
             this.label10.Size = new System.Drawing.Size(96, 16);
             this.label10.TabIndex = 35;
             this.label10.Text = "PAID part 2";
-            // 
-            // txtPAIDpart2
-            // 
-            this.txtPAIDpart2.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPAIDpart2.Location = new System.Drawing.Point(31, 203);
-            this.txtPAIDpart2.Margin = new System.Windows.Forms.Padding(4);
-            this.txtPAIDpart2.Name = "txtPAIDpart2";
-            this.txtPAIDpart2.ReadOnly = true;
-            this.txtPAIDpart2.Size = new System.Drawing.Size(409, 22);
-            this.txtPAIDpart2.TabIndex = 34;
-            this.txtPAIDpart2.Text = "111303143100001497210456584403  02";
             // 
             // label9
             // 
@@ -205,17 +183,6 @@
             this.label9.Size = new System.Drawing.Size(104, 16);
             this.label9.TabIndex = 33;
             this.label9.Text = "PAID pattern";
-            // 
-            // txtPAIDpart1
-            // 
-            this.txtPAIDpart1.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPAIDpart1.Location = new System.Drawing.Point(31, 153);
-            this.txtPAIDpart1.Margin = new System.Windows.Forms.Padding(4);
-            this.txtPAIDpart1.Name = "txtPAIDpart1";
-            this.txtPAIDpart1.ReadOnly = true;
-            this.txtPAIDpart1.Size = new System.Drawing.Size(409, 22);
-            this.txtPAIDpart1.TabIndex = 32;
-            this.txtPAIDpart1.Text = "00100000000103010253                            02";
             // 
             // txtPrefix
             // 
@@ -381,6 +348,42 @@
             this.label14.TabIndex = 52;
             this.label14.Text = "PAID part 1";
             // 
+            // txtPAIDpart3
+            // 
+            this.txtPAIDpart3.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::IDTower.Properties.Settings.Default, "paid3", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.txtPAIDpart3.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPAIDpart3.Location = new System.Drawing.Point(31, 253);
+            this.txtPAIDpart3.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPAIDpart3.Name = "txtPAIDpart3";
+            this.txtPAIDpart3.ReadOnly = true;
+            this.txtPAIDpart3.Size = new System.Drawing.Size(409, 22);
+            this.txtPAIDpart3.TabIndex = 36;
+            this.txtPAIDpart3.Text = global::IDTower.Properties.Settings.Default.paid3;
+            // 
+            // txtPAIDpart2
+            // 
+            this.txtPAIDpart2.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::IDTower.Properties.Settings.Default, "paid2", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.txtPAIDpart2.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPAIDpart2.Location = new System.Drawing.Point(31, 203);
+            this.txtPAIDpart2.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPAIDpart2.Name = "txtPAIDpart2";
+            this.txtPAIDpart2.ReadOnly = true;
+            this.txtPAIDpart2.Size = new System.Drawing.Size(409, 22);
+            this.txtPAIDpart2.TabIndex = 34;
+            this.txtPAIDpart2.Text = global::IDTower.Properties.Settings.Default.paid2;
+            // 
+            // txtPAIDpart1
+            // 
+            this.txtPAIDpart1.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::IDTower.Properties.Settings.Default, "paid1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.txtPAIDpart1.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPAIDpart1.Location = new System.Drawing.Point(31, 153);
+            this.txtPAIDpart1.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPAIDpart1.Name = "txtPAIDpart1";
+            this.txtPAIDpart1.ReadOnly = true;
+            this.txtPAIDpart1.Size = new System.Drawing.Size(409, 22);
+            this.txtPAIDpart1.TabIndex = 32;
+            this.txtPAIDpart1.Text = global::IDTower.Properties.Settings.Default.paid1;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -419,6 +422,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Dragutinu, kad se popne na ID Tower :)";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.numTotal)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

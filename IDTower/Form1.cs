@@ -102,5 +102,15 @@ namespace IDTower
             }
             txtSKU.ReadOnly = false;
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.Save();
+        }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Properties.Settings.Default.Save();
+        }
     }
 }
